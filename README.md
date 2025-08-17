@@ -53,7 +53,7 @@ Designed for log rotation, cleanup tasks, or saving disk space in a simple and c
 
 Clone the repo:
 ```bash
-git clone https://github.com/praveensingh-git/file-janitor_v2.0.git
+git clone https://github.com/praveensingh-git/file-janitor_V2.0.git
 cd file-janitor
 ```
 

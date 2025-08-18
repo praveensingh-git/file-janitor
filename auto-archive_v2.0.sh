@@ -18,10 +18,10 @@ if [ "$1" == "-h" ] || [ "$1" == "--help" ]; then
     exit 0
 fi
 
-[ -n $1 ] && BASE="$1"
-[ -n $2 ] && DAYS="$2"
-[ -n $3 ] && DEPTH="$3"
-[ -n $4 ] && RUN="$4"
+[ -n "$1" ] && BASE="$1"
+[ -n "$2" ] && DAYS="$2"
+[ -n "$3" ] && DEPTH="$3"
+[ -n "$4" ] && RUN="$4"
 
 #Check base dir exists
 
@@ -53,7 +53,7 @@ fi
 
 
 #Cleanup old archives
-
+if [[ "$RUN" -eq 1 ]]; then
 echo "Cleaning up archives older than $DAYS days..."
 find "$BASE/archive" -type f -mtime +"$DAYS" -print -delete
-
+fi
